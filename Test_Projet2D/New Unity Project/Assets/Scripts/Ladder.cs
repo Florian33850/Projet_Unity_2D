@@ -1,32 +1,35 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 
 public class Ladder : MonoBehaviour
 {
     private bool isInRange;
     private PlayerMovement playerMovement;
-    public BoxCollider2D collider;
+    public BoxCollider2D topCollider;
+    public Text interactUI;
 
     // Start is called before the first frame update
     void Awake()
     {
         playerMovement = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerMovement>();
+        interactUI = GameObject.FindGameObjectWithTag("InteractUI").GetComponent<Text>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(playerMovement.isClimbing && Input.GetKeyDown(KeyCode.E))
+        if(isInRange && playerMovement.isClimbing && Input.GetKeyDown(KeyCode.E))
         {
             //Descendre de l'échelle
             playerMovement.isClimbing = false;
-            collider.isTrigger = false;
+            topCollider.isTrigger = false;
             return;
         }
 
         if(isInRange && Input.GetKeyDown(KeyCode.E))
         {
             playerMovement.isClimbing = true;
-            collider.isTrigger = true;
+            topCollider.isTrigger = true;
         }
     }
 
@@ -34,6 +37,7 @@ public class Ladder : MonoBehaviour
     {
         if(collision.CompareTag("Player"))
         {
+            interactUI.enabled = true;
             isInRange = true;
         }
     }
@@ -44,7 +48,8 @@ public class Ladder : MonoBehaviour
         {
             isInRange = false;
             playerMovement.isClimbing = false;
-            collider.isTrigger = false;
+            topCollider.isTrigger = false;
+            interactUI.enabled = false;
         }
     }
 }

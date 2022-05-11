@@ -1,17 +1,33 @@
 fileFormatVersion: 2
 guid: d1f54cb0d80b942a5bc7c00f8963d796
 TextureImporter:
-  fileIDToRecycleName:
-    21300000: flag-red-white_0
-    21300002: flag-red-white_1
-    21300004: flag-red-white_2
-    21300006: flag-red-white_3
-    21300008: flag-red-white_4
-    21300010: flag-red-white_5
-    21300012: flag-red-white_6
-    21300014: flag-red-white_7
+  internalIDToNameTable:
+  - first:
+      213: 21300000
+    second: flag-red-white_0
+  - first:
+      213: 21300002
+    second: flag-red-white_1
+  - first:
+      213: 21300004
+    second: flag-red-white_2
+  - first:
+      213: 21300006
+    second: flag-red-white_3
+  - first:
+      213: 21300008
+    second: flag-red-white_4
+  - first:
+      213: 21300010
+    second: flag-red-white_5
+  - first:
+      213: 21300012
+    second: flag-red-white_6
+  - first:
+      213: 21300014
+    second: flag-red-white_7
   externalObjects: {}
-  serializedVersion: 9
+  serializedVersion: 11
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -31,6 +47,7 @@ TextureImporter:
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -40,8 +57,8 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -62,11 +79,15 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 1
   platformSettings:
-  - serializedVersion: 2
+  - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -77,6 +98,7 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -96,6 +118,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 3c09e4c42280f4e1d94daca284258c04
+      internalID: 21300000
       vertices: []
       indices: 
       edges: []
@@ -116,6 +139,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 0d5766ac926ee4acc8c154d26fdd6d3c
+      internalID: 21300002
       vertices: []
       indices: 
       edges: []
@@ -136,6 +160,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 80ae9dd9235824cb2a4c22b8d5dadee5
+      internalID: 21300004
       vertices: []
       indices: 
       edges: []
@@ -156,6 +181,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: da387db5e43814ee995a5a634aa43772
+      internalID: 21300006
       vertices: []
       indices: 
       edges: []
@@ -176,6 +202,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: db424809c8fa64911954c3450d3269fc
+      internalID: 21300008
       vertices: []
       indices: 
       edges: []
@@ -196,6 +223,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 68568c11dc7e54f5b9b8d8ed5e78a1c0
+      internalID: 21300010
       vertices: []
       indices: 
       edges: []
@@ -216,6 +244,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: aff334cb193e0402c98b35d08bc23018
+      internalID: 21300012
       vertices: []
       indices: 
       edges: []
@@ -236,6 +265,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 6db0905da723c4de5859cccd6655bc00
+      internalID: 21300014
       vertices: []
       indices: 
       edges: []
@@ -244,10 +274,12 @@ TextureImporter:
     physicsShape: []
     bones: []
     spriteID: 8281e5e8a25b74ef8bd12625e45ae984
+    internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
+    secondaryTextures: []
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
